@@ -9,6 +9,7 @@ var usersRouter = require('./routes/users');
 
 //definir la ruta a utilizar
 var biciRouter = require('./routes/bicicletas');
+var bicicletasAPIRouter = require('./routes/API/bibicletas');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/bicicletas',biciRouter)
+app.use('/api/bicicletas',bicicletasAPIRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

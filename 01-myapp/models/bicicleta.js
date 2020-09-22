@@ -33,15 +33,13 @@ Bicicleta.removeById = function (aBiciId) {
     const index = Bicicleta.allBicis.findIndex((valorActual, index)=>{
         return Number(valorActual.id) === Number(aBiciId)
     })
-    console.log(index)
-
     Bicicleta.allBicis.splice(index,1)
 
 
 }
 
-var bicia = new Bicicleta(1,'rojo','urbana',[-34.6012424,-58.3861497]);
-var bicib = new Bicicleta(2,'blanca','urbana',[-34.596932,-58.3808287]);
+var bicia = new Bicicleta(1,'rojo','urbana',[-0.282259, -78.558960]);
+var bicib = new Bicicleta(2,'blanca','urbana',[-0.282421, -78.559289]);
 
 Bicicleta.add(bicia);
 Bicicleta.add(bicib);
